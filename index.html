@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <main>
+      <header id="header">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+      </header>
+      <form id="survey-form">
+        <fieldset>
+          <label for="name" id="name-label">Name: <input type="text" id="name" placeholder="Enter your name" required></label>
+          <label for="email" id ="email-label">Email: <input type="email" id="email" placeholder="Enter your email" required></label>
+          <label for="age" id="number-label">Age:  <input type="number" id="number" placeholder="Age" required min="1"  max="100" required></label>
+     
+        </fieldset>
+      <fieldset>
+         <label for="gender">Gender: <input type="radio" name="male" value="1" class="inline" >Male
+<input type="radio" name="male" value="2"class="inline">Female
+      </label>
+      <label for="status" id="status">Would you like to be contacted <input id="checkbox" type="checkbox" value="1" class="inline">Yes
+      <input id="checkbox" type="checkbox"value="2" class="inline">No
+     
+      </fieldset>
+        
+        <fieldset>
+          <label for="referrer">How did you hear about us? <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Facebook</option>
+            <option value="2">Instagram</option>
+            <option value="3">Twitter</option>
+            <option value="">Other</option>
+            </select>
+      <label for="comments">Any comments or suggestions?<textarea rows="9" cols="30" placeholder="Any comments"></textarea>
+        </fieldset>
+        <input type="submit" id="submit" value="submit">
+      </form>
+    </main>
+  </body>
+</html>
+
